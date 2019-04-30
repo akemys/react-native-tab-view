@@ -19,8 +19,8 @@ export default function TabBarIndicator<T: Route>(props: Props<T>) {
   const translateX = Animated.multiply(
     Animated.multiply(
       Animated.interpolate(position, {
-        inputRange: [0, routes.length - 1],
-        outputRange: [0, routes.length - 1],
+        inputRange: [0, routes.length],
+        outputRange: [0, routes.length],
         extrapolate: 'clamp',
       }),
       width
